@@ -1,0 +1,18 @@
+body {
+    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+    text-decoration-color: aqua;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
