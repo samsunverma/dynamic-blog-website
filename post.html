@@ -18,7 +18,7 @@
     <button id="edit-button">Edit</button>
     <button id="save-button" style="display:none;">Save</button>
     <p id="message" style="color: green;"></p>
-
+    <button class="delete-button" onclick="deletePost()">Delete Post</button>
     <script>
         // Function to get the post ID from the URL
         function getPostIdFromUrl() {
@@ -41,7 +41,7 @@
         }
 
         function enableEditing() {
-            const contentField = document.getElementById('post-title');
+            
             const contentField = document.getElementById('post-content');
             contentField.readOnly = false;
             document.getElementById('edit-button').style.display = 'none';
@@ -66,7 +66,6 @@
             document.getElementById('save-button').style.display = 'none';
         }
 
-        // Main function to execute on page load
         function main() {
             const postId = getPostIdFromUrl();
             const post = loadPostData(postId);
@@ -77,7 +76,6 @@
             document.getElementById('save-button').addEventListener('click', () => saveChanges(postId));
         }
 
-        // Execute main function
         main();
     </script>
 </body>
